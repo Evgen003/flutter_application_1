@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Header',
+                'Страны',
                 style: Theme.of(context).textTheme.headlineLarge,
               ),
               20.ph,

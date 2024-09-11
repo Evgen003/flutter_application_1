@@ -23,18 +23,18 @@ final GoRouter router = GoRouter(
           child: const HomeScreen(),
         );
       },
-      // для следующей лабораторной работы
-      // routes: [
-      // GoRoute(
-      // path: 'article/:id',
-      // pageBuilder: (context, state) {
-      // return NoTransitionPage<void>(
-      // key: state.pageKey,
-      // child: const ArticleScreen(),
-      // );
-      // },
-      // ),
-      // ],
+      //для следующей лабораторной работы
+      routes: [
+        GoRoute(
+          path: 'article/:id',
+          pageBuilder: (context, state) {
+            return NoTransitionPage<void>(
+              key: state.pageKey,
+              child: const DetailsScreen(),
+            );
+          },
+        ),
+      ],
     ),
   ],
 );
